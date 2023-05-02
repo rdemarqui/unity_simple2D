@@ -6,7 +6,8 @@ public class playerManager : MonoBehaviour
 {
     private Rigidbody2D player;
     private float movePlayer;
-    public float speed;
+    private bool jump;
+    public float speed, jumpForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,12 @@ public class playerManager : MonoBehaviour
     void Update()
     {
         movePlayer = Input.GetAxis("Horizontal");
+        jump = Input.GetButtonDown("Jump");
+
         player.velocity = new Vector2(movePlayer * speed, player.velocity.y);
+        if (jump == true)
+        {
+            player.AddForce(new Vector2(0, jumpForce));
+        }
     }
 }
