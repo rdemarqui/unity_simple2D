@@ -68,6 +68,7 @@ public class playerManager : MonoBehaviour
     {
         if (win == true)
         {
+            colectCoins.save = true;
             player.velocity = new Vector2(0, player.velocity.y);
             panelWin.transform.position = Vector2.MoveTowards(panelWin.transform.position, cameraPos.transform.position, speedWin * Time.deltaTime);
         }

@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class colectCoins : MonoBehaviour
 {
+    public static bool save;
     public Text scoreTxt;
     private int score;
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        save = false;
+        score = PlayerPrefs.GetInt("totalScore");
     }
 
     void Update()
     {
         scoreTxt.text = "Score " + score.ToString();
+        saveScore();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -23,6 +26,14 @@ public class colectCoins : MonoBehaviour
         {
             score ++;
             Destroy(col.gameObject);
+        }
+    }
+    private void saveScore()
+    {
+        if (save == true)
+        {
+            PlayerPrefs.SetInt("totalScore", score);
+            PlayerPrefs.Save();
         }
     }
 }
