@@ -23,7 +23,6 @@ public class playerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(win);
         movePlayer = Input.GetAxis("Horizontal");
         jump = Input.GetButtonDown("Jump");
         cameraPos.transform.position = new Vector3(cameraPos.transform.position.x,
@@ -43,6 +42,10 @@ public class playerManager : MonoBehaviour
         if (col.gameObject.layer == 8)
         {
             isgrounded = true;
+        }
+        if (col.gameObject.layer == 10)
+        {
+            restartPlayer = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -68,6 +71,8 @@ public class playerManager : MonoBehaviour
     {
         if (win == true)
         {
+            particleWinManager.canPlay = true;
+            Debug.Log(particleWinManager.canPlay);
             colectCoins.save = true;
             player.velocity = new Vector2(0, player.velocity.y);
             panelWin.transform.position = Vector2.MoveTowards(panelWin.transform.position, cameraPos.transform.position, speedWin * Time.deltaTime);

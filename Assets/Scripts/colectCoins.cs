@@ -7,7 +7,13 @@ public class colectCoins : MonoBehaviour
 {
     public static bool save;
     public Text scoreTxt;
-    private int score;
+    private int score = 0;
+
+    private void Awake()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     // Start is called before the first frame update
     void Start()
     {

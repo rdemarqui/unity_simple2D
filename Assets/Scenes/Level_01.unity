@@ -2209,7 +2209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 646d75df76db8d543953bfd73c8c6fae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2504,7 +2504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 876682895304203174, guid: 3228bbde00fa5d04f9f823a22039223a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -407.81
+      value: -454.63
       objectReference: {fileID: 0}
     - target: {fileID: 876682895304203174, guid: 3228bbde00fa5d04f9f823a22039223a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2540,11 +2540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 876682895304203174, guid: 3228bbde00fa5d04f9f823a22039223a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -203.89998
+      value: -143
       objectReference: {fileID: 0}
     - target: {fileID: 876682895304203174, guid: 3228bbde00fa5d04f9f823a22039223a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 157.69
+      value: 163.6
       objectReference: {fileID: 0}
     - target: {fileID: 876682895304203174, guid: 3228bbde00fa5d04f9f823a22039223a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2575,6 +2575,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1021528121}
+    - target: {fileID: 1640041842058750758, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.999996
+      objectReference: {fileID: 0}
     - target: {fileID: 1640041842441333230, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2609,7 +2613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640041842441333230, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -324.84
+      value: -296.36
       objectReference: {fileID: 0}
     - target: {fileID: 1640041842441333230, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2645,7 +2649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640041842441333230, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 462
+      value: 447.76
       objectReference: {fileID: 0}
     - target: {fileID: 1640041842441333230, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2662,6 +2666,10 @@ PrefabInstance:
     - target: {fileID: 1640041842441333231, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
       propertyPath: m_Name
       value: PanelWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640041843229261477, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 63.02004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 922b08de9f00e8744a8bf51409f8b422, type: 3}
